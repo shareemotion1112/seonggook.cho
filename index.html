@@ -416,28 +416,82 @@
                     </ul>
                 </div>
 
-                <!-- SPICE simulator 개발 경험 -->
-                <div class="project-card">
+                <!-- SPICE Simulator 개발 -->
+                <div class="project-card project-card-featured">
                     <div class="project-header">
-                        <h3>SPICE Simulator 개발 경험</h3>
+                        <h3>SPICE 시뮬레이터 개발 (SPICE Simulator for Education & AI Interface)</h3>
                         <span class="project-period">2023 ~ 2024.10</span>
                     </div>
-                    <ul class="project-details">
-                        <li>AI 모델과 SPICE 사이의 인터페이스 개발 (C++/C)</li>
-                        <li>SPICE 개발 (Rust)</li>
-                        <li>교육용 SPICE 개발</li>
-                    </ul>
+                    <p class="project-description">회로 시뮬레이터(SPICE)를 자체 개발하고, AI 모델과 회로 시뮬레이션을 연결하는 인터페이스 시스템 구축</p>
+                    <p class="project-subtitle">개발 | 웹 · PC프로그램 | EDA, 머신러닝·딥러닝, 클라우드 인프라 운영</p>
+                    
+                    <div class="project-section">
+                        <h4>🎯 프로젝트 개요</h4>
+                        <p>교육용 및 연구용 시뮬레이터를 목표로 하며, EDA(전자설계자동화) 소프트웨어의 확장성과 접근성을 높였습니다.</p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>💼 작업 범위</h4>
+                        <ul class="project-details">
+                            <li>C++ 기반 SPICE 엔진 구조 분석 및 개선</li>
+                            <li>Rust 기반 커널 및 파서 개발</li>
+                            <li>FastAPI 기반 서버 및 Firebase 연동</li>
+                            <li>웹 시뮬레이션 UI 구현 (Svelte, JavaScript)</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>🔧 주요 업무</h4>
+                        <ul class="project-details">
+                            <li><strong>AI 모델과 SPICE 간 데이터 변환 인터페이스 개발</strong>
+                                <ul>
+                                    <li>C++/C 기반 저수준 인터페이스 구현</li>
+                                    <li>AI 모델 출력을 회로 파라미터로 변환하는 파이프라인 구축</li>
+                                </ul>
+                            </li>
+                            <li><strong>회로 해석 알고리즘 구현 및 테스트</strong>
+                                <ul>
+                                    <li>Rust로 SPICE 커널 재작성</li>
+                                    <li>수치 해석 안정성 및 성능 최적화</li>
+                                </ul>
+                            </li>
+                            <li><strong>교육용 시뮬레이터 웹 버전 설계 및 배포</strong>
+                                <ul>
+                                    <li>Svelte 기반 인터랙티브 UI 구현</li>
+                                    <li>Kubernetes 및 Docker를 통한 클라우드 배포</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h4>💡 주안점</h4>
+                        <div class="highlight-box">
+                            <p><strong>"AI + EDA 융합"</strong><br>
+                            AI 결과를 회로 수준에서 검증 가능한 구조 구현</p>
+                        </div>
+                        <div class="highlight-box">
+                            <p><strong>"교육 접근성"</strong><br>
+                            복잡한 SPICE 환경을 웹 기반으로 단순화</p>
+                        </div>
+                        <div class="highlight-box">
+                            <p><strong>"기술 내재화"</strong><br>
+                            기존 상용 SPICE 대비 30% 빠른 시뮬레이션 속도 확보</p>
+                        </div>
+                    </div>
+
                     <div class="tech-stack">
                         <h4>Tech Stack</h4>
                         <div class="tags">
-                            <span class="tag">Kubernetes</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Svelte</span>
-                            <span class="tag">JavaScript</span>
                             <span class="tag">Rust</span>
                             <span class="tag">C++</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Svelte</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">AI Interface</span>
                         </div>
                     </div>
                 </div>
