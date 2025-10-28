@@ -98,3 +98,12 @@ document.querySelectorAll('.timeline-item').forEach((item, index) => {
     item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
     observer.observe(item);
 });
+
+// PDF Download functionality
+const pdfDownloadBtn = document.getElementById('pdfDownloadBtn');
+if (pdfDownloadBtn) {
+    pdfDownloadBtn.addEventListener('click', () => {
+        // 브라우저의 인쇄 대화상자를 열어 PDF로 저장할 수 있게 함
+        window.print();
+    });
+}

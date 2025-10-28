@@ -69,6 +69,24 @@ body {
     color: var(--primary-color);
 }
 
+.pdf-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.pdf-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -631,6 +649,72 @@ body {
     }
 }
 
+/* Print/PDF Styles */
+@media print {
+    /* 네비게이션 숨기기 */
+    .navbar,
+    .hamburger,
+    .pdf-btn {
+        display: none !important;
+    }
+
+    /* 페이지 여백 설정 */
+    @page {
+        margin: 1.5cm;
+    }
+
+    /* 배경색 제거 */
+    body {
+        background: white;
+    }
+
+    /* Hero 섹션 배경 조정 */
+    .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        page-break-after: avoid;
+    }
+
+    /* 섹션 간 페이지 나누기 방지 */
+    .section,
+    .project-card,
+    .timeline-item {
+        page-break-inside: avoid;
+    }
+
+    /* 그림자 제거 (인쇄 시 불필요) */
+    .project-card,
+    .about-image {
+        box-shadow: none !important;
+        border: 1px solid #e5e7eb;
+    }
+
+    /* 링크 색상 유지 */
+    a {
+        color: #667eea;
+        text-decoration: none;
+    }
+
+    /* 모든 요소 불투명도 1로 설정 */
+    * {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Featured 카드 배경 유지 */
+    .project-card-featured {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Highlight box 배경 유지 */
+    .highlight-box {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
@@ -648,6 +732,11 @@ body {
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .pdf-btn {
+        margin-top: 1rem;
+        width: 80%;
     }
 
     .hamburger {
