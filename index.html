@@ -54,7 +54,7 @@
                     </p>
                     <p class="hero-description">
                         물리학 박사 출신 풀스택 개발자 | React, Svelte, Flutter,
-                        FastAPI, Rust | AI/ML & DevOps
+                        FastAPI, Rust | AI/ML, 3D 그래픽스 & DevOps
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">연락하기</a>
@@ -84,7 +84,10 @@
                             소프트웨어 개발자로 전환한 풀스택 개발자입니다.
                             데이터 사이언티스트로 시작하여 AI/ML 엔지니어,
                             백엔드/프론트엔드 개발, 모바일 앱 개발까지 다양한
-                            기술 스택을 경험했습니다.
+                            기술 스택을 경험했으며, 최근에는 AI 스캔과 3D
+                            그래픽스를 결합한 자체 웹 서비스
+                            <strong>토치북(Tochibook)</strong>을 기획·개발하며
+                            1인 개발을 이어가고 있습니다.
                         </p>
                         <ul class="highlight-list">
                             <li>
@@ -99,6 +102,16 @@
                                 <strong>AI/ML:</strong> 머신러닝 모델 개발,
                                 준지도학습, 이미지 처리 (OpenCV), 자체 NN
                                 library 구현
+                            </li>
+                            <li>
+                                <strong>LLM 통합:</strong> Claude · Gemini
+                                멀티 프로바이더 추상화 기반 AI 템플릿 생성
+                                파이프라인 구축 (JSON Schema 검증 포함)
+                            </li>
+                            <li>
+                                <strong>3D 그래픽스:</strong> Three.js ·
+                                Babylon.js 기반 인터랙티브 3D 뷰어, PBR
+                                머티리얼 및 페이지 플립 애니메이션 구현
                             </li>
                             <li>
                                 <strong>시스템 개발:</strong> SPICE 회로
@@ -195,6 +208,19 @@
                             <h3>(주) 알세미</h3>
                             <p class="timeline-period">2022.10 ~ 2024.10</p>
                             <p>SPICE Simulator 개발 리더</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>개인 프로젝트 / 1인 개발</h3>
+                            <p class="timeline-period">2024.10 ~ 현재</p>
+                            <p>
+                                토치북(Tochibook) 등 자체 웹 서비스 기획 ·
+                                디자인 · 개발 총괄 (Svelte 5 · Three.js ·
+                                Supabase · LLM 통합)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1224,6 +1250,172 @@
                                 <span class="tag">TossPayment</span>
                                 <span class="tag">PWA</span>
                                 <span class="tag">Responsive Web</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 토치북 (Tochibook / MyLittlePhotoBook) -->
+                    <div class="project-card project-card-featured">
+                        <div class="project-header">
+                            <h3>
+                                토치북 (Tochibook / MyLittlePhotoBook)
+                            </h3>
+                            <span class="project-period">2025 ~ 현재</span>
+                        </div>
+                        <p class="project-description">
+                            아이의 그림과 아날로그 추억을 AI 스캔으로 복원하고
+                            3D 사진첩으로 영구 보존하는 디지털 아카이브 서비스
+                        </p>
+                        <p class="project-subtitle">
+                            기획 · 디자인 · 개발 총괄 | 웹 | AI · 3D
+                        </p>
+
+                        <div class="project-section">
+                            <h4>📱 플랫폼</h4>
+                            <p>
+                                Web (SvelteKit · PWA) — iOS / Android 네이티브
+                                앱은 트래픽 검증 후 Capacitor로 확장 예정
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>🎯 프로젝트 배경</h4>
+                            <p>
+                                유치원/학교에서 매일 가져오는 아이 그림,
+                                서랍에 쌓여가는 종이 작품, 갤러리에 묻혀버린
+                                여행 사진. "버리긴 아쉽고, 정리하긴 막막한"
+                                아날로그 추억을 AI 스캔과 3D 사진첩으로
+                                복원·보존하기 위해 기획했습니다. 단순 스캐너 앱이
+                                아닌, "스캔 → AI 복원 → 3D 전시·감상 → 공유"의
+                                완결된 경험을 한 앱에서 제공하는 것을 목표로
+                                했습니다.
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>📊 프로젝트 성과</h4>
+                            <ul class="project-details">
+                                <li>
+                                    SvelteKit 기반 웹 MVP 출시 및 운영
+                                </li>
+                                <li>
+                                    Claude · Gemini 멀티 프로바이더 기반 AI
+                                    템플릿 생성기 구축 (카테고리×무드×사진수
+                                    조합 일괄 생성)
+                                </li>
+                                <li>
+                                    포토북을 단일 HTML로 추출하는 독립 실행
+                                    뷰어 내보내기 및 7일 클라우드 보관 시스템
+                                    구축
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>⭐ 핵심 기능</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <strong>AI 스마트 스캐너</strong>
+                                    <ul>
+                                        <li>
+                                            실시간 외곽선 자동 검출 및 4-corner
+                                            원근 왜곡 보정(Deskew)
+                                        </li>
+                                        <li>
+                                            그림자 제거 · 색감 복원 · ESRGAN
+                                            기반 AI 업스케일링으로 흐릿한
+                                            아날로그 사진까지 선명하게
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>
+                                        3D 포토북 뷰어 (Three.js · Babylon.js)
+                                    </strong>
+                                    <ul>
+                                        <li>
+                                            물리 기반 페이지 플립 애니메이션 및
+                                            스튜디오 모드 / 파노라마 배경
+                                        </li>
+                                        <li>
+                                            9종 커버 재질(가죽 · 클레이 · 펠트
+                                            · 캔버스 등) PBR 머티리얼 적용
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>AI 템플릿 생성기 (Dev Mode)</strong>
+                                    <ul>
+                                        <li>
+                                            Claude / Gemini API를 활용해
+                                            카테고리×무드×사진수 조합으로 포토북
+                                            레이아웃 템플릿을 일괄 생성
+                                        </li>
+                                        <li>
+                                            시스템 프롬프트 · 이미지 참조 ·
+                                            JSON Schema 검증 파이프라인 구축
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>지도 기반 추억 탐색</strong>
+                                    <ul>
+                                        <li>
+                                            EXIF GPS 자동 추출 및 줌 레벨별
+                                            클러스터링 (동네 → 도시 → 나라 단위)
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>💼 작업 범위</h4>
+                            <ul class="project-details">
+                                <li>
+                                    서비스 기획, UX 설계, 브랜딩, 가격 정책
+                                    수립까지 1인 총괄
+                                </li>
+                                <li>
+                                    SvelteKit 기반 SPA / PWA 프론트엔드 구축
+                                </li>
+                                <li>
+                                    Supabase(Auth · Storage · Postgres · Edge
+                                    Functions · pg_cron) 기반 백엔드 구성
+                                </li>
+                                <li>
+                                    포인트 기반 결제 시스템 및 환불 처리 로직
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>🔧 주요 업무</h4>
+                            <ul class="project-details">
+                                <li>3D 페이지 플립 엔진 구현</li>
+                                <li>AI 스마트 스캐너 (외곽선 검출 · Deskew · AI 업스케일)</li>
+                                <li>AI 템플릿 생성기 (Claude · Gemini 기반 일괄 생성)</li>
+                                <li>결제 · 환불 · 포인트 시스템 개발</li>
+                                <li>독립 실행 HTML 뷰어 내보내기 및 7일 클라우드 보관</li>
+                                <li>지도 기반 사진 클러스터링 탐색기</li>
+                            </ul>
+                        </div>
+
+                        <div class="tech-stack">
+                            <h4>Tech Stack</h4>
+                            <div class="tags">
+                                <span class="tag">Svelte 5</span>
+                                <span class="tag">SvelteKit</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Three.js</span>
+                                <span class="tag">Babylon.js</span>
+                                <span class="tag">PWA</span>
+                                <span class="tag">Supabase</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Edge Functions</span>
+                                <span class="tag">Anthropic Claude</span>
+                                <span class="tag">Google Gemini</span>
+                                <span class="tag">Sentry</span>
                             </div>
                         </div>
                     </div>
