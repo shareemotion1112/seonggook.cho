@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>조성국 - Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            }
+            .card {
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+                max-width: 900px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .header {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 40px;
+                text-align: center;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                border: 4px solid rgba(255,255,255,0.3);
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+            .name { font-size: 2rem; font-weight: 700; margin-bottom: 5px; }
+            .title { font-size: 1rem; opacity: 0.9; letter-spacing: 3px; }
+            .content { padding: 30px 40px; }
+            .section { margin-bottom: 25px; }
+            .section:last-child { margin-bottom: 0; }
+            .section-title {
+                font-size: 1rem;
+                font-weight: 700;
+                color: #667eea;
+                margin-bottom: 12px;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #e5e7eb;
+            }
+            .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+            .item { margin-bottom: 10px; }
+            .item-title { font-weight: 600; font-size: 0.95rem; color: #1f2937; }
+            .item-period { font-size: 0.8rem; color: #667eea; font-weight: 500; }
+            .item-desc { font-size: 0.85rem; color: #6b7280; }
+            .project-item { 
+                background: #f9fafb; 
+                padding: 12px 15px; 
+                border-radius: 8px; 
+                margin-bottom: 10px;
+                border-left: 3px solid #667eea;
+            }
+            .project-item:last-child { margin-bottom: 0; }
+            .project-name { font-weight: 600; font-size: 0.9rem; color: #1f2937; }
+            .project-desc { font-size: 0.8rem; color: #4b5563; margin-top: 6px; line-height: 1.5; }
+            .project-tech { font-size: 0.75rem; color: #667eea; margin-top: 6px; }
+            .contact-row {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                font-size: 0.85rem;
+                color: #6b7280;
+            }
+            .contact-row a { color: #667eea; text-decoration: none; }
+            @media (max-width: 600px) {
+                .two-col { grid-template-columns: 1fr; gap: 20px; }
+                .content { padding: 20px; }
+                .header { padding: 30px 20px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="header">
+                <img src="myImage.png" alt="조성국" class="profile-img" />
+                <h1 class="name">조성국</h1>
+                <p class="title">DEVELOPER</p>
+            </div>
+            <div class="content">
+                <!-- 학력 & 경력 -->
+                <div class="section">
+                    <div class="two-col">
+                        <div>
+                            <h3 class="section-title">학력</h3>
+                            <div class="item">
+                                <div class="item-title">한양대학교 박사</div>
+                                <div class="item-period">2009 ~ 2014</div>
+                                <div class="item-desc">물리학 (Condensed Material Physics)</div>
+                            </div>
+                            <div class="item">
+                                <div class="item-title">한양대학교 석사</div>
+                                <div class="item-period">2007 ~ 2009</div>
+                                <div class="item-desc">물리학</div>
+                            </div>
+                            <div class="item">
+                                <div class="item-title">한양대학교 학사</div>
+                                <div class="item-period">2000 ~ 2007</div>
+                                <div class="item-desc">물리학</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="section-title">경력</h3>
+                            <div class="item">
+                                <div class="item-title">(주) 알세미</div>
+                                <div class="item-period">2022.10 ~ 2024.10</div>
+                                <div class="item-desc">SPICE Simulator 개발 리더</div>
+                            </div>
+                            <div class="item">
+                                <div class="item-title">(주) LG 디스플레이</div>
+                                <div class="item-period">2014 ~ 2022.10</div>
+                                <div class="item-desc">TFT 엔지니어 / 데이터 사이언티스트</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI 프로젝트 -->
+                <div class="section">
+                    <h3 class="section-title">AI 개발 프로젝트</h3>
+                    <div class="project-item">
+                        <div class="project-name">2018 | 불량 예측 모델 개발</div>
+                        <div class="project-desc">제조 공정 데이터 기반 DNN 불량 예측 모델 설계 및 학습. SMOTE를 활용한 불균형 데이터 처리, Feature Importance 분석을 통한 불량 원인 인자 도출 및 시각화 대시보드 구현.</div>
+                        <div class="project-tech">Python, DNN, Pandas, SMOTE, Feature Engineering</div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-name">2019~2021 | 데이터 분석 자동화 시스템 개발</div>
+                        <div class="project-desc">XPS, FTIR, DSIMS 등 물성 분석 데이터 자동 수집·처리 파이프라인 구축. Gaussian Naive Bayes + XGBoost 조합의 준지도학습 모델로 막 물성 예측 및 이상 감지 수행.</div>
+                        <div class="project-tech">Semi-supervised Learning, XGBoost, FastAPI, MySQL</div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-name">2019~2021 | 준지도 학습 기반 데이터 증강 시스템 개발</div>
+                        <div class="project-desc">레이블 부족 환경에서 Self-training 기법을 적용한 데이터 증강 알고리즘 설계. 웹 기반 실시간 분석 플랫폼 구축으로 연구 엔지니어의 데이터 업로드 및 예측 결과 즉시 확인 가능.</div>
+                        <div class="project-tech">Svelte, FastAPI, WebSocket, Semi-supervised Learning</div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-name">2018~2021 | AI 매칭 알고리즘 개발</div>
+                        <div class="project-desc">사용자 프로필 및 행동 로그 기반 이성 추천 ML 모델 설계. 협업 필터링과 콘텐츠 기반 필터링을 결합한 하이브리드 추천 시스템으로 매칭 정확도 개선.</div>
+                        <div class="project-tech">React Native, Machine Learning, Firebase</div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-name">2023~2024 | AI 모델과 회로 시뮬레이터 간 인터페이스 개발</div>
+                        <div class="project-desc">SPICE 시뮬레이터와 AI 모델 간 데이터 교환을 위한 인터페이스 설계. 시뮬레이션 결과를 AI 모델 입력으로 변환하고, AI 예측값을 시뮬레이터 파라미터로 피드백하는 양방향 파이프라인 구축.</div>
+                        <div class="project-tech">C++, Rust, Python, REST API</div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-name">2023~2024 | AI 모델 기반 회로 시뮬레이터 개발</div>
+                        <div class="project-desc">기존 물리 기반 SPICE 모델을 AI 서로게이트 모델로 대체하여 시뮬레이션 속도 향상. 뉴럴 네트워크 기반 소자 모델링으로 복잡한 비선형 특성 학습 및 빠른 회로 해석 구현.</div>
+                        <div class="project-tech">C++, Rust, Neural Network, SPICE</div>
+                    </div>
+                </div>
+
+                <!-- 연락처 -->
+                <div class="section">
+                    <h3 class="section-title">Contact</h3>
+                    <div class="contact-row">
+                        <span>📧 <a href="mailto:shareemotion@kakao.com">shareemotion@kakao.com</a></span>
+                        <span>📱 010-5432-7902</span>
+                        <span>🔗 <a href="index.html">상세 이력서</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
