@@ -668,6 +668,11 @@ body {
         background: white;
     }
 
+    /* 인쇄 시 섹션 여백 축소 (빈 페이지 방지) */
+    .section {
+        padding: 20px 0;
+    }
+
     /* Hero 섹션 배경 조정 */
     .hero {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -676,10 +681,10 @@ body {
         page-break-after: avoid;
     }
 
-    /* 섹션 간 페이지 나누기 방지 */
-    .section,
+    /* 카드/타임라인/개인정보 중간 페이지 나누기 방지 */
     .project-card,
-    .timeline-item {
+    .timeline-item,
+    .personal-info {
         page-break-inside: avoid;
     }
 
