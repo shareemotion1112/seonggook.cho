@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
     <head>
         <meta charset="UTF-8" />
@@ -23,7 +23,11 @@
                     <li><a href="#projects">프로젝트</a></li>
                     <li><a href="#publications">논문 & 특허</a></li>
                     <li><a href="#contact">연락처</a></li>
-                    <li><button id="pdfDownloadBtn" class="pdf-btn">📄 PDF 저장</button></li>
+                    <li>
+                        <button id="pdfDownloadBtn" class="pdf-btn">
+                            📄 PDF 저장
+                        </button>
+                    </li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -49,8 +53,8 @@
                         Full-Stack Developer & AI/ML Engineer
                     </p>
                     <p class="hero-description">
-                        반도체 물리학 박사 출신 풀스택 개발자 | React, Svelte,
-                        Flutter, FastAPI, Rust | AI/ML & DevOps
+                        물리학 박사 출신 풀스택 개발자 | React, Svelte, Flutter,
+                        FastAPI, Rust | AI/ML, 3D 그래픽스 & DevOps
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">연락하기</a>
@@ -76,11 +80,14 @@
                     </div>
                     <div class="about-text">
                         <p>
-                            반도체 물리학 박사 출신으로 현장 엔지니어링 경험을
-                            바탕으로 소프트웨어 개발자로 전환한 풀스택
-                            개발자입니다. 데이터 사이언티스트로 시작하여 AI/ML
-                            엔지니어, 백엔드/프론트엔드 개발, 모바일 앱 개발까지
-                            다양한 기술 스택을 경험했습니다.
+                            물리학 박사 출신으로 현장 엔지니어링 경험을 바탕으로
+                            소프트웨어 개발자로 전환한 풀스택 개발자입니다.
+                            데이터 사이언티스트로 시작하여 AI/ML 엔지니어,
+                            백엔드/프론트엔드 개발, 모바일 앱 개발까지 다양한
+                            기술 스택을 경험했으며, 최근에는 AI 스캔과 3D
+                            그래픽스를 결합한 자체 웹 서비스
+                            <strong>토치북(Tochibook)</strong>을 기획·개발하며
+                            1인 개발을 이어가고 있습니다.
                         </p>
                         <ul class="highlight-list">
                             <li>
@@ -97,14 +104,21 @@
                                 library 구현
                             </li>
                             <li>
+                                <strong>LLM 통합:</strong> Claude · Gemini 멀티
+                                프로바이더 추상화 기반 AI 템플릿 생성 파이프라인
+                                구축 (JSON Schema 검증 포함)
+                            </li>
+                            <li>
+                                <strong>3D 그래픽스:</strong> Three.js ·
+                                Babylon.js 기반 인터랙티브 3D 뷰어, PBR 머티리얼
+                                및 페이지 플립 애니메이션 구현
+                            </li>
+                            <li>
                                 <strong>시스템 개발:</strong> SPICE 회로
                                 시뮬레이터 개발 리더, C++/Rust 기반 저수준
                                 프로그래밍
                             </li>
-                            <li>
-                                <strong>DevOps:</strong> Docker, Kubernetes,
-                                GitHub Actions를 통한 CI/CD 구축
-                            </li>
+                            <li><strong>DevOps:</strong> Docker, Kubernetes</li>
                             <li>
                                 <strong>데이터베이스:</strong> Firebase, MySQL,
                                 Firestore를 활용한 데이터 관리
@@ -194,6 +208,19 @@
                             <h3>(주) 알세미</h3>
                             <p class="timeline-period">2022.10 ~ 2024.10</p>
                             <p>SPICE Simulator 개발 리더</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>개인 프로젝트 / 1인 개발</h3>
+                            <p class="timeline-period">2024.10 ~ 현재</p>
+                            <p>
+                                토치북(Tochibook) 등 자체 웹 서비스 기획 ·
+                                디자인 · 개발 총괄 (Svelte 5 · Three.js ·
+                                Supabase · LLM 통합)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -351,7 +378,7 @@
                                 </li>
                                 <li>
                                     SEM/FIB/TEM 이미지 데이터 분석 자동화
-                                    (Unsupervised Learning)
+                                    (수치해석 기반)
                                 </li>
                             </ul>
                         </div>
@@ -394,12 +421,12 @@
                                 </li>
                                 <li>
                                     <strong
-                                        >이미지 세그멘테이션 모델 개발</strong
+                                        >이미지 자동 분석 알고리즘 개발</strong
                                     >
                                     <ul>
                                         <li>
-                                            Unsupervised model for SEM/FIB/TEM
-                                            image segmentation
+                                            수치해석 기반 SEM/FIB/TEM 이미지
+                                            자동 분석 알고리즘
                                         </li>
                                     </ul>
                                 </li>
@@ -529,16 +556,16 @@
                     <!-- Dating App Development -->
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>
-                                데이팅 앱 개발 (Dating App Development)
-                            </h3>
+                            <h3>데이팅 앱 개발 (Dating App Development)</h3>
                             <span class="project-period">2018 ~ 2021</span>
                         </div>
                         <p class="project-description">
-                            사용자 성향 및 관심사 데이터를 기반으로 최적의 이성을 추천하는 AI 매칭 데이팅 애플리케이션
+                            사용자 성향 및 관심사 데이터를 기반으로 최적의
+                            이성을 추천하는 AI 매칭 데이팅 애플리케이션
                         </p>
                         <p class="project-subtitle">
-                            글로벌 IT 기업(시스코, 오라클 등)에 근무하는 엔지니어들과 협업
+                            글로벌 IT 기업(시스코, 오라클 등)에 근무하는
+                            엔지니어들과 협업
                         </p>
 
                         <div class="project-section">
@@ -549,9 +576,17 @@
                         <div class="project-section">
                             <h4>💼 작업 범위</h4>
                             <ul class="project-details">
-                                <li>React Native 기반 크로스 플랫폼 모바일 앱 개발</li>
-                                <li>Firebase Authentication 및 Realtime Database 연동</li>
-                                <li>WebSocket 기반 실시간 1:1 채팅 기능 구현</li>
+                                <li>
+                                    React Native 기반 크로스 플랫폼 모바일 앱
+                                    개발
+                                </li>
+                                <li>
+                                    Firebase Authentication 및 Realtime Database
+                                    연동
+                                </li>
+                                <li>
+                                    WebSocket 기반 실시간 1:1 채팅 기능 구현
+                                </li>
                                 <li>SQLite를 활용한 채팅 메시지 로컬 저장</li>
                                 <li>FCM 기반 푸시 알림 시스템 구축</li>
                                 <li>이성 추천 AI 알고리즘 개발 및 연동</li>
@@ -564,8 +599,13 @@
                                 <li>
                                     <strong>React Native 앱 개발</strong>
                                     <ul>
-                                        <li>Android/iOS 하이브리드 앱 개발 및 배포</li>
-                                        <li>사용자 프로필, 매칭, 채팅 화면 구현</li>
+                                        <li>
+                                            Android/iOS 하이브리드 앱 개발 및
+                                            배포
+                                        </li>
+                                        <li>
+                                            사용자 프로필, 매칭, 채팅 화면 구현
+                                        </li>
                                         <li>앱 성능 최적화 및 메모리 관리</li>
                                     </ul>
                                 </li>
@@ -580,13 +620,20 @@
                                 <li>
                                     <strong>AI 매칭 알고리즘 개발</strong>
                                     <ul>
-                                        <li>사용자 프로필 및 관심사 기반 매칭 알고리즘 설계</li>
-                                        <li>사용자 행동 로그 분석 및 추천 정확도 개선</li>
-                                        <li>머신러닝 모델과 앱 연동</li>
+                                        <li>
+                                            사용자 프로필 및 관심사 기반 매칭
+                                            알고리즘 설계
+                                        </li>
+                                        <li>확률 기반의 매칭 알고리즘 개발</li>
+                                        <li>
+                                            매칭 결과에 따른 사용자 경험 개선
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <strong>푸시 알림 및 백그라운드 처리</strong>
+                                    <strong
+                                        >푸시 알림 및 백그라운드 처리</strong
+                                    >
                                     <ul>
                                         <li>FCM을 통한 푸시 알림 구현</li>
                                         <li>백그라운드/포그라운드 알림 처리</li>
@@ -685,15 +732,6 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <strong>CI/CD 간소화</strong>
-                                    <ul>
-                                        <li>
-                                            GitHub Actions 및 EAS CLI를 통한
-                                            자동 빌드 파이프라인 구성
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
                                     <strong>앱 안정화</strong>
                                     <ul>
                                         <li>
@@ -711,7 +749,6 @@
                                 <span class="tag">React Native</span>
                                 <span class="tag">Expo</span>
                                 <span class="tag">EAS Update</span>
-                                <span class="tag">GitHub Actions</span>
                                 <span class="tag">TypeScript</span>
                                 <span class="tag">Babel</span>
                                 <span class="tag">Metro</span>
@@ -923,13 +960,9 @@
                             <h4>🔧 주요 업무</h4>
                             <ul class="project-details">
                                 <li>
-                                    홍채 영역 자동 감지 및 전처리 파이프라인
-                                    구현
+                                    UI/UX 설계
                                     <ul>
-                                        <li>
-                                            OpenCV의 허프 변환 기반 원 검출 및
-                                            이미지 정규화
-                                        </li>
+                                        <li>사용자 친화적인 UI/UX 설계</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -1221,94 +1254,109 @@
                         </div>
                     </div>
 
-                    <!-- 토치북 (TOCHIBOOK) -->
+                    <!-- 토치북 (Tochibook / MyLittlePhotoBook) -->
                     <div class="project-card project-card-featured">
                         <div class="project-header">
-                            <h3>토치북 (TOCHIBOOK) - 3D 디지털 포토북</h3>
-                            <span class="project-period">2025</span>
+                            <h3>토치북 (Tochibook / MyLittlePhotoBook)</h3>
+                            <span class="project-period">2025 ~ 현재</span>
                         </div>
                         <p class="project-description">
-                            웹 브라우저에서 진짜 책을 넘기듯 사진을 감상할 수 있는 3D 디지털 포토북 서비스
+                            아이의 그림과 아날로그 추억을 AI 스캔으로 복원하고
+                            3D 사진첩으로 영구 보존하는 디지털 아카이브 서비스
                         </p>
                         <p class="project-subtitle">
-                            개발 · 디자인 · 기획 | 웹 | AI · 크리에이티브 툴
+                            기획 · 디자인 · 개발 총괄 | 웹 | AI · 3D
                         </p>
 
                         <div class="project-section">
-                            <h4>🎯 프로젝트 개요</h4>
+                            <h4>📱 플랫폼</h4>
                             <p>
-                                사진을 찍고 보관하는 방법은 많지만, 다시 꺼내보는 경험은 쉽지 않다. 클라우드는 
-                                수천 장의 사진 속에서 원하는 순간을 찾기 어렵고, 인쇄 포토북은 비용과 공간의 제약이 따른다. 
-                                TOCHIBOOK은 3D 기술로 실제 책을 넘기는 경험을 디지털로 재현하여, 
-                                비용 부담 없이 언제 어디서든 꺼내볼 수 있는 포토북을 만든다.
+                                Web (SvelteKit · PWA) — iOS / Android 네이티브
+                                앱은 트래픽 검증 후 Capacitor로 확장 예정
                             </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>🎯 프로젝트 배경</h4>
+                            <p>
+                                유치원/학교에서 매일 가져오는 아이 그림, 서랍에
+                                쌓여가는 종이 작품, 갤러리에 묻혀버린 여행 사진.
+                                "버리긴 아쉽고, 정리하긴 막막한" 아날로그 추억을
+                                AI 스캔과 3D 사진첩으로 복원·보존하기 위해
+                                기획했습니다. 단순 스캐너 앱이 아닌, "스캔 → AI
+                                복원 → 3D 전시·감상 → 공유"의 완결된 경험을 한
+                                앱에서 제공하는 것을 목표로 했습니다.
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>📊 프로젝트 성과</h4>
+                            <ul class="project-details">
+                                <li>SvelteKit 기반 웹 MVP 출시 및 운영</li>
+                                <li>
+                                    Claude · Gemini 멀티 프로바이더 기반 AI
+                                    템플릿 생성기 구축 (카테고리×무드×사진수
+                                    조합 일괄 생성)
+                                </li>
+                                <li>
+                                    포토북을 단일 HTML로 추출하는 독립 실행 뷰어
+                                    내보내기 및 7일 클라우드 보관 시스템 구축
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="project-section">
                             <h4>⭐ 핵심 기능</h4>
                             <ul class="project-details">
                                 <li>
-                                    <strong>3D 페이지 넘김 효과</strong>
+                                    <strong>AI 스마트 스캐너</strong>
                                     <ul>
                                         <li>
-                                            마우스로 페이지를 잡고 넘기면 종이가 휘어지며 넘어가는 실제 포토북의 느낌을 3D로 재현
+                                            실시간 외곽선 자동 검출 및 4-corner
+                                            원근 왜곡 보정(Deskew)
+                                        </li>
+                                        <li>
+                                            그림자 제거 · 색감 복원 · ESRGAN
+                                            기반 AI 업스케일링으로 흐릿한
+                                            아날로그 사진까지 선명하게
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <strong>단일 HTML 파일 저장</strong>
+                                    <strong>
+                                        3D 포토북 뷰어 (Three.js · Babylon.js)
+                                    </strong>
                                     <ul>
                                         <li>
-                                            완성된 포토북이 하나의 HTML 파일로 저장되어, 브라우저만 있으면 어떤 기기에서든 열람 가능
+                                            물리 기반 페이지 플립 애니메이션 및
+                                            스튜디오 모드 / 파노라마 배경
                                         </li>
                                         <li>
-                                            인터넷 연결 불필요, 앱 설치나 회원가입 없이 파일만으로 감상 가능
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>영속성 보장</strong>
-                                    <ul>
-                                        <li>
-                                            HTML은 웹의 가장 기본적인 기술로 30년 전 파일도 지금 열리듯, 서비스 종속 없이 반영구적 보관 가능
+                                            9종 커버 재질(가죽 · 클레이 · 펠트 ·
+                                            캔버스 등) PBR 머티리얼 적용
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <strong>간편한 제작 및 공유</strong>
+                                    <strong>AI 템플릿 생성기 (Dev Mode)</strong>
                                     <ul>
                                         <li>
-                                            사진을 넣고 배치를 잡으면 바로 완성, 카카오톡 하나로 공유 가능
+                                            Claude / Gemini API를 활용해
+                                            카테고리×무드×사진수 조합으로 포토북
+                                            레이아웃 템플릿을 일괄 생성
                                         </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="project-section">
-                            <h4>🤖 AI 기능</h4>
-                            <ul class="project-details">
-                                <li>
-                                    <strong>AI 사진 스캔 및 자동 선별</strong>
-                                    <ul>
                                         <li>
-                                            AI가 사진 속 인물, 장소, 이벤트를 인식하여 포토북에 어울리는 최적의 컷을 자동 추천
+                                            시스템 프롬프트 · 이미지 참조 · JSON
+                                            Schema 검증 파이프라인 구축
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <strong>AI 해상도 보정 (Super-Resolution)</strong>
+                                    <strong>지도 기반 추억 탐색</strong>
                                     <ul>
                                         <li>
-                                            오래된 저해상도 사진이나 확대 시 깨지는 이미지를 AI 기반 업스케일링으로 선명하게 복원
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>AI 파노라마 배경 생성</strong>
-                                    <ul>
-                                        <li>
-                                            단일 사진으로도 AI가 주변 배경을 자연스럽게 생성하여 파노라마 페이지 구성
+                                            EXIF GPS 자동 추출 및 줌 레벨별
+                                            클러스터링 (동네 → 도시 → 나라 단위)
                                         </li>
                                     </ul>
                                 </li>
@@ -1318,25 +1366,59 @@
                         <div class="project-section">
                             <h4>💼 작업 범위</h4>
                             <ul class="project-details">
-                                <li>3D 페이지 넘김 효과 구현 (CSS 3D Transform, JavaScript)</li>
-                                <li>포토북 에디터 UI/UX 설계 및 개발</li>
-                                <li>단일 HTML 파일 내보내기(self-contained) 기능 개발</li>
-                                <li>반응형 웹 디자인 (PC/모바일 대응)</li>
+                                <li>
+                                    서비스 기획, UX 설계, 브랜딩, 가격 정책
+                                    수립까지 1인 총괄
+                                </li>
+                                <li>
+                                    SvelteKit 기반 SPA / PWA 프론트엔드 구축
+                                </li>
+                                <li>
+                                    Supabase(Auth · Storage · Postgres · Edge
+                                    Functions · pg_cron) 기반 백엔드 구성
+                                </li>
+                                <li>
+                                    포인트 기반 결제 시스템 및 환불 처리 로직
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>🔧 주요 업무</h4>
+                            <ul class="project-details">
+                                <li>3D 페이지 플립 엔진 구현</li>
+                                <li>
+                                    AI 스마트 스캐너 (외곽선 검출 · Deskew · AI
+                                    업스케일)
+                                </li>
+                                <li>
+                                    AI 템플릿 생성기 (Claude · Gemini 기반 일괄
+                                    생성)
+                                </li>
+                                <li>결제 · 환불 · 포인트 시스템 개발</li>
+                                <li>
+                                    독립 실행 HTML 뷰어 내보내기 및 7일 클라우드
+                                    보관
+                                </li>
+                                <li>지도 기반 사진 클러스터링 탐색기</li>
                             </ul>
                         </div>
 
                         <div class="tech-stack">
                             <h4>Tech Stack</h4>
                             <div class="tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS 3D Transform</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">WebGL</span>
-                                <span class="tag">Responsive Web</span>
-                                <span class="tag">AI Image Processing</span>
-                                <span class="tag">Super-Resolution</span>
-                                <span class="tag">Image Segmentation</span>
-                                <span class="tag">Generative AI</span>
+                                <span class="tag">Svelte 5</span>
+                                <span class="tag">SvelteKit</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Three.js</span>
+                                <span class="tag">Babylon.js</span>
+                                <span class="tag">PWA</span>
+                                <span class="tag">Supabase</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Edge Functions</span>
+                                <span class="tag">Anthropic Claude</span>
+                                <span class="tag">Google Gemini</span>
+                                <span class="tag">Sentry</span>
                             </div>
                         </div>
                     </div>
@@ -1358,7 +1440,7 @@
                             소프트웨어를 개발한 적이 있었고, 해당 프로젝트의
                             코드 양이 상당히 많았다고 말씀하셨습니다. 처음에는
                             그것이 그저 술자리 분위기를 이끌기 위한 이야기인
-                            줄로만 알았습니다. 그러나 얼마 후에 소자
+                            줄로만 알았습니다. 그러나 얼마 후에 디바이스 분석
                             엔지니어에서 갑자기 데이터 사이언티스트로 전향하게
                             되었습니다. 당시 기계 학습 분야가 빠르게 성장하고
                             있었으며, 통계학 전문가 이외에는 해당 분야에 대한

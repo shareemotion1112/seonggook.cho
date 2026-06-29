@@ -818,4 +818,18 @@ body {
         padding: 10px 24px;
         font-size: 0.9rem;
     }
+
+    /* Mobile Animation Override: Force visibility on small screens */
+    .project-card,
+    .section,
+    .timeline-item,
+    .hero-image-wrapper,
+    .hero-title,
+    .hero-subtitle,
+    .hero-description,
+    .hero-buttons {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
 }
