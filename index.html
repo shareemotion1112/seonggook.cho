@@ -92,7 +92,9 @@
                             다양한 서비스를 기획·개발·마케팅까지 혼자서
                             총괄하며, AI를 적극 활용해 반복 업무를 자동화하고
                             개발 생산성을 극대화하는 것을 목표로 하고
-                            있습니다.
+                            있습니다. 2026년에는 프리랜서로 일본 고객 대상
+                            의료관광 예약 플랫폼 <strong>SHOKUMO CARE</strong>를
+                            결제 연동 · 운영 오픈까지 단독으로 개발했습니다.
                         </p>
                         <ul class="highlight-list">
                             <li>
@@ -111,7 +113,8 @@
                             <li>
                                 <strong>LLM 통합:</strong> Claude · Gemini 멀티
                                 프로바이더 추상화 기반 AI 템플릿 생성 파이프라인
-                                구축 (JSON Schema 검증 포함)
+                                구축 (JSON Schema 검증 포함), 한↔일 경어 번역 ·
+                                Gemini 사진 검수 등 실서비스 적용
                             </li>
                             <li>
                                 <strong>3D 그래픽스:</strong> Three.js ·
@@ -126,11 +129,13 @@
                             <li><strong>DevOps:</strong> Docker, Kubernetes</li>
                             <li>
                                 <strong>데이터베이스:</strong> Firebase, MySQL,
-                                Firestore를 활용한 데이터 관리
+                                Firestore, Realtime Database, Supabase(Postgres)를
+                                활용한 데이터 관리
                             </li>
                             <li>
                                 <strong>결제 시스템:</strong> PortOne,
-                                TossPayment 연동 및 PG사 심사 대응
+                                TossPayment, Eximbay(해외결제) 연동 및 PG사
+                                심사 대응
                             </li>
                             <li>
                                 <strong>수치해석:</strong> C#을 이용한 FTIR,
@@ -225,6 +230,18 @@
                                 토치북(Tochibook) 등 자체 웹 서비스 기획 ·
                                 디자인 · 개발 총괄 (Svelte 5 · Three.js ·
                                 Supabase · LLM 통합)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>프리랜서 - SHOKUMO CARE</h3>
+                            <p class="timeline-period">2026.09 ~ 2026.10</p>
+                            <p>
+                                일본 고객 대상 모발이식 예약 플랫폼 풀스택 1인 개발
+                                (Next.js · Firebase · Eximbay 결제)
                             </p>
                         </div>
                     </div>
@@ -1427,6 +1444,226 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- SHOKUMO CARE (프리랜서) -->
+                    <div class="project-card project-card-featured">
+                        <div class="project-header">
+                            <h3>SHOKUMO CARE 시즌2 - 일본 고객 대상 모발이식 예약 플랫폼</h3>
+                            <span class="project-period">2026.09 ~ 2026.10</span>
+                        </div>
+                        <p class="project-description">
+                            일본 고객이 한국 모발이식 클리닉에 사진·문진을 보내
+                            의사 사전 확인을 받고, 예약금 결제까지 모바일 웹에서
+                            끝내는 의료관광 예약 플랫폼
+                        </p>
+                        <p class="project-subtitle">
+                            프리랜서 | 풀스택 1인 개발 | 고객(일본어) · 관리자 ·
+                            클리닉 포털 3면 서비스
+                        </p>
+
+                        <div class="project-section">
+                            <h4>📱 플랫폼</h4>
+                            <p>
+                                Web (Next.js · 모바일 우선) — 고객 화면 일본어,
+                                관리자 · 클리닉 화면 한국어
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>🎯 프로젝트 배경</h4>
+                            <p>
+                                시즌1 랜딩 페이지로 문의만 받던 서비스를 실제
+                                예약 실행형 서비스로 전환하는 프로젝트.
+                                "신청 → 사진·문진 업로드 → 클리닉 의사 확인 →
+                                일본어 안내서 → 예약금 결제 → 예약확정서"의
+                                전 과정을 시스템으로 옮기고, 운영자 1명이
+                                클리닉과 일본 고객 사이를 관리자 화면 하나로
+                                운영할 수 있게 하는 것이 목표였습니다. 요구사항
+                                정의서 기반 20일 개발 계획을 세우고 일 단위로
+                                대표에게 진행 보고하며 진행했습니다.
+                            </p>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>📊 프로젝트 성과</h4>
+                            <ul class="project-details">
+                                <li>
+                                    요구사항 정의서 수령 후 약 6주 만에 운영
+                                    오픈까지 1인 개발 (2026.10 예약 접수 개시)
+                                </li>
+                                <li>
+                                    엑심베이(Eximbay) 해외결제 실연동 및 PG
+                                    가맹점 심사 대응 → 운영 MID 발급·운영 전환
+                                </li>
+                                <li>
+                                    커밋 약 280건, TypeScript 약 3.5만 줄 —
+                                    단계별 코드 리뷰로 결제·보안 결함 선제 수정
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>⭐ 핵심 기능</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <strong>예약 신청 퍼널 (일본어)</strong>
+                                    <ul>
+                                        <li>
+                                            이메일 OTP 인증 · 초안 자동저장 및
+                                            7일 이어쓰기 링크 · 단계별 동의 버전
+                                            기록
+                                        </li>
+                                        <li>
+                                            영업일 · 한국 공휴일(공공데이터포털
+                                            API 월 1회 동기화) · 클리닉 불가일을
+                                            반영한 희망일 달력과 48시간 캘린더
+                                            홀드
+                                        </li>
+                                        <li>
+                                            촬영 가이드형 사진 업로드 —
+                                            ElevenLabs 음성 안내 · 카운트다운,
+                                            HEIC 변환 · 브라우저 자동 압축
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>클리닉 보안링크 · 클리닉 포털</strong>
+                                    <ul>
+                                        <li>
+                                            건별 토큰 링크 + PIN(5회 실패 시
+                                            잠금), 의료 사진은 비공개 저장소에서
+                                            서버 경유 signed URL로만 열람 ·
+                                            접근 로그
+                                        </li>
+                                        <li>
+                                            클리닉 계정 · 새 기기 2단계 인증 ·
+                                            자체 예약 캘린더 · 수술 완료 기록,
+                                            접수 즉시 담당자 문자(SOLAPI) 발송
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>결제 · 정산 (Eximbay)</strong>
+                                    <ul>
+                                        <li>
+                                            결제 준비(fgkey) · SDK 결제창(JPY /
+                                            KRW) · 서버 검증 · 웹훅 멱등 정산,
+                                            예약금은 서버 저장 금액으로 재계산
+                                        </li>
+                                        <li>
+                                            결제 완료 시 예약확정서 자동 발급,
+                                            약관 기준 환불액 자동 계산 및 취소 ·
+                                            환불 흐름
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>AI · 번역</strong>
+                                    <ul>
+                                        <li>
+                                            고객↔운영자 실시간 채팅 자동번역
+                                            (Firebase RTDB + Cloud Functions,
+                                            Papago · 용어집 후처리)
+                                        </li>
+                                        <li>
+                                            클리닉 소견 한→일 경어(敬語) 번역 —
+                                            Claude · Papago 어댑터 교체 구조
+                                        </li>
+                                        <li>
+                                            Gemini(Vertex AI) 기반 업로드 사진
+                                            촬영 각도 분류 · 품질 판정 검수
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>운영자 관리자 대시보드</strong>
+                                    <ul>
+                                        <li>
+                                            14단계 상태 머신 · 처리 대기 배지 ·
+                                            조건변경 제안/고객 동의 회차 관리 ·
+                                            변경 이력 · 감사 로그
+                                        </li>
+                                        <li>
+                                            이메일(Resend) · 카카오톡 알림 발송
+                                            로그와 재발송, 리마인드 메일 스케줄러
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>💼 작업 범위</h4>
+                            <ul class="project-details">
+                                <li>
+                                    요구사항 정의서 분석 · 20일 개발 계획 · 일일
+                                    보고 · PRD 작성
+                                </li>
+                                <li>
+                                    Next.js 프론트엔드 · Route Handler 백엔드 ·
+                                    Firestore 데이터 모델 설계
+                                </li>
+                                <li>
+                                    Firebase App Hosting 운영 / 개발 백엔드 분리,
+                                    Secret Manager · Cloud Scheduler 구성
+                                </li>
+                                <li>
+                                    일본 특정상거래법 · 개인정보보호법 자문 결과를
+                                    약관 · 동의 · 결제 화면에 반영
+                                </li>
+                                <li>
+                                    GA4 · Google Ads 전환 측정, CSP 보안 정책
+                                    적용
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-section">
+                            <h4>🔧 주요 업무</h4>
+                            <ul class="project-details">
+                                <li>
+                                    엑심베이 결제 연동 및 결제 오류 원인 분석
+                                    (CSP · 클라이언트 라우팅으로 SDK 차단되던
+                                    문제 재현 · 수정)
+                                </li>
+                                <li>
+                                    의료 사진 비공개 업로드 · 보안링크 · 30일
+                                    자동 삭제 등 민감정보 보호 설계
+                                </li>
+                                <li>실시간 채팅 자동번역 및 알림 묶음 발송</li>
+                                <li>
+                                    클리닉 포털(계정 · 2단계 인증 · 캘린더 ·
+                                    예약 내역)
+                                </li>
+                                <li>
+                                    Firebase 보안 규칙 테스트 · 단계별 코드 리뷰
+                                    반영
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tech-stack">
+                            <h4>Tech Stack</h4>
+                            <div class="tags">
+                                <span class="tag">Next.js 15</span>
+                                <span class="tag">React 19</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Firestore</span>
+                                <span class="tag">Realtime Database</span>
+                                <span class="tag">Cloud Functions</span>
+                                <span class="tag">App Hosting</span>
+                                <span class="tag">Eximbay</span>
+                                <span class="tag">Resend</span>
+                                <span class="tag">SOLAPI</span>
+                                <span class="tag">Papago</span>
+                                <span class="tag">Anthropic Claude</span>
+                                <span class="tag">Google Gemini</span>
+                                <span class="tag">GA4</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1474,6 +1711,10 @@
                             있습니다. 아이루틴(iRoutine)과 아이리스(Iris Analysis Service),
                             토치북(TOCHIBOOK) 등 AI 기술을 접목한 서비스들을 통해
                             사용자에게 실질적인 가치를 제공하는 데 집중하고 있습니다.
+                            또한 프리랜서로 참여한 SHOKUMO CARE에서는 요구사항
+                            정의서 분석부터 해외결제 연동, 법률 자문 반영, 운영 오픈까지
+                            클라이언트와 매일 소통하며 실제 고객이 결제하는 서비스를
+                            짧은 기간에 오픈까지 완성하는 경험을 했습니다.
                         </p>
                     </div>
                 </div>
